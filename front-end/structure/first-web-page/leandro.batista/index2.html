@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clockdiff(8) - Linux man page</title>
+    <style type="text/css">
+    h1 {
+    	border-bottom: #600 solid 2px;
+    	line-height: 1.2;
+    }</style>
+</head>
+<body>
+    <h1><b>clockdiff(8) - Linux man page</b></h1>
+    <h2>Name</h2>
+    	<p>clockdiff - measure clock difference between hosts</p>
+    <h2>Synopsis</h2>
+    	<p><b>clockdiff [ -o] [ -o1] destination</b></p>
+    <h2>Description</h2>
+    	<p><b>clockdiff</b> Measures clock difference between us and destination with 1 msec resolution using ICMP TIMESTAMP [2] packets or, optionally, IP TIMESTAMP option [3] option added to ICMP ECHO. [1]</p>
+    <h2>Options</h2>
+		<b>-o</b>
+			<dd>Use IP TIMESTAMP with ICMP ECHO instead of ICMP TIMESTAMP messages. It is useful with some destinations, which do not support ICMP TIMESTAMP (f.e. Solaris <2.4).</dd>
+		<b>-o1</b>
+			<dd>Slightly different form of <b>-o</b>, namely it uses three-term IP TIMESTAMP with prespecified hop addresses instead of four term one. What flavor works better depends on target host. Particularly, <b>-o</b> is better for Linux.</dd>
+    <h2>Warnings</h2>
+    	<ul>
+    		<li>Some nodes (Cisco) use non-standard timestamps, which is allowed by RFC, but makes timestamps mostly useless.</li>
+    		<li>Some nodes generate messed timestamps (Solaris>2.4), when run <b>xntpd</b>. Seems, its IP stack uses a corrupted clock source, which is synchronized to time-of-day clock periodically and jumps randomly making timestamps mostly useless. Good news is that you can use NTP in this case, which is even better.</li>
+    		<li><b>clockdiff</b> shows difference in time modulo 24 days.</li>
+    	</ul>
+    <h2>See Also</h2>
+    	<p><i><a href="https://linux.die.net/man/8/ping">ping</a>(8),<a href="https://linux.die.net/man/8/arping">arping</a>(8),<a href="https://linux.die.net/man/8/tracepath">tracepath.</a>(8)</i></p>
+    <h2>Referenced</h2>
+    	<p>[1] ICMP ECHO, RFC0792, page 14.</p>
+    	<p>[2] ICMP TIMESTAMP, RFC0792, page 16.</p>
+    	<p>[3] IP TIMESTAMP option, RFC0791, 3.1, page 16.</p>
+    <h2>Author</h2>
+    	<p><b>clockdiff</b> was compiled by Alexey Kuznetsov <<a href="mailto:kuznet@ms2.inr.ac.ru">kuznet@ms2.inr.ac.ru</a>>. It was based on code borrowed from BSD timed daemon. It is now maintained by YOSHIFUJI Hideaki <<a href="mailto:yoshfuji@skbuff.net">yoshfuji@skbuff.net</a>>.</p>
+    <h2>Security</h2>
+    	<p><b>clockdiff</b> requires CAP_NET_RAWIO capability to be executed. It is safe to be used as set-uid root.</p>
+    <h2>Availability</h2>
+    	<p><b>clockdiff</b> is part of iputils package and the latest versions are available in source form at <a href="http://www.skbuff.net/iputils/iputils-current.tar.bz2">http://www.skbuff.net/iputils/iputils-current.tar.bz2</a>.</p>
+</body>
+</html>
