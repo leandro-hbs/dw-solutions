@@ -3,6 +3,6 @@
 
 function areaOfCircle($radius)
 {
-    $result = 2*$radius*$radius;
-    echo "$result;
+    $result = M_PI*$radius**2;
+    echo $result;
 }

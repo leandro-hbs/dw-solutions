@@ -1,0 +1,33 @@
+body {
+	font-family: Arial, sans-serif;
+	color: darkslategrey;
+	font-size: 17px;
+}
+a {
+	text-decoration: none;
+	color: darkblue;
+}
+a:hover {
+	color: darkblue;
+	text-decoration: underline;
+}
+h1 a {
+	color: white;
+} 
+h2 a {
+	color: lightskyblue;
+}
+h1 {
+	text-align: center;
+	color: darkblue;
+	font-size: 30px;
+}
+h2 {
+	color: darkblue;
+	background-color: #87cefa;
+	font-size: 24px;
+}
+p.dois {
+	text-align: center;
+	font-weight: bold;
+}
