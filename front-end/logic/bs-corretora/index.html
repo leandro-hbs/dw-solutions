@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BS Corretora</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="fonte-titulo">
+<!-- Regiao do cabecalho -->
+<header class="bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-light fonte-titulo" href="#">BS Corretora</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Imóveis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#modal-falar" href="#">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div id="modal-falar" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Fale conosco</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <textarea placeholder="Digite seu texto" style="width: 100%"></textarea>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-dark">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <!-- Regiao das imagens -->
+    <section id="casas">
+        <div>
+            <h2 class="fonte-titulo text-center pt-5 mt-3">Imóveis de alta .classe, com .estilo</h2>
+        </div>
+
+        <section class="container">
+            <div class="row justify-content-md-around justify-content-center">
+                <article class="card card-imagem">
+                    <img src="https://abrilcasa.files.wordpress.com/2019/07/1-agra.jpg?quality=95&strip=info&w=1024&h=683" class="card-imagem-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pirenópolis</h5>
+                        <p class="card-text">Casa em Pirenópolis, em frente à cachoeira do roncador</p>
+                        <a href="#" class="btn btn-dark">Visitar</a>
+                    </div>
+                </article>
+
+                <article class="card card-imagem">
+                    <img src="https://images.adsttc.com/media/images/5d30/74e2/284d/d1d0/8600/00cd/newsletter/10.jpg?1563456684" class="card-imagem-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Teixeira</h5>
+                        <p class="card-text">Casa no alto da serra do teixeira. Ideal para uma família</p>
+                        <a href="#" class="btn btn-dark">Visitar</a>
+                    </div>
+                </article>
+
+                <article class="card card-imagem">
+                    <img src="https://images.adsttc.com/media/images/5d4c/f0c6/284d/d1d5/e200/001b/newsletter/FEATURED_IMAGE.jpg?1565323453" class="card-imagem-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Alphaville</h5>
+                        <p class="card-text">O condomínio que terá o maior
+                            criadouro de peixes Beta</p>
+                        <a href="#" class="btn btn-dark">Visitar</a>
+                    </div>
+                </article>
+
+                <article class="card card-imagem">
+                    <img src="https://images.adsttc.com/media/images/5d48/78a6/284d/d191/f900/00ca/medium_jpg/Casa_10_(27).jpg?1565030528" class="card-imagem-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Areia</h5>
+                        <p class="card-text">Casa em Areia, pertinho dos engenhos e da natureza</p>
+                        <a href="#" class="btn btn-dark">Visitar</a>
+                    </div>
+                </article>
+
+                <article class="card card-imagem">
+                    <img src="https://apollo-ireland.akamaized.net/v1/files/eyJmbiI6Im9qajUzMWg0OXZmODItQVBUIiwidyI6W3siZm4iOiI0amFmcGw5aDNmZ3QtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.CF3ozUel3WpgKlsar92ZkF98uGK8yIcKlBLJF0f0AnA/image;s=1280x1024;q=80" class="card-imagem-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lindóia</h5>
+                        <p class="card-text">Casa de veraneio em Águas Claras de Lindóia</p>
+                        <a href="#" class="btn btn-dark">Visitar</a>
+                    </div>
+                </article>
+
+                <article class="card card-imagem">
+                    <img src="https://abrilcasa.files.wordpress.com/2019/07/casa-em-angra-projetada-pela-beta-arquitetura-_-foto-1.jpg" class="card-imagem-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Teixeira</h5>
+                        <p class="card-text">Casa no alto da serra do teixeira. Ideal para uma família</p>
+                        <a href="#" class="btn btn-dark">Visitar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </section>
+
+    <!-- Regiao da casa em destaque -->
+    <div class="container-fluid" style="background-color: rgb(217,217,243);">
+  		<div class="row mt-5" style="height: 18rem;">
+    		<div class="col-sm-6 col-lg-4 pt-5 text-center">
+    			<h2>Destaque</h2>
+        		<p>Casa em Ilha Bela</p>
+    			<button type="button" class="btn btn-dark mt-5">Marque uma visita</button>
+    		</div>
+    		<div class="col-sm-6 col-lg-8 pt-5">
+        		<img src="https://abrilcasa.files.wordpress.com/2019/07/casa-em-angra-projetada-pela-beta-arquitetura-_-foto-1.jpg" class="card-imagem-lg" alt="...">
+      		</div>
+  		</div>
+	</div>
+
+    <!-- Regiao dos depoimentos dos clientes -->
+    <div class="container mt-5">
+        <h2>Clientes</h2>
+        <ul class="list-unstyled">
+            <li class="media mt-5">
+                <img src="http://s2.glbimg.com/jsaPuF7nO23vRxQkuJ_V3WgouKA=/e.glbimg.com/og/ed/f/original/2014/06/10/461777879.jpg" class="card-imagem-clientes rounded" alt="...">
+                <div class="media-body ml-5">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li class="media mt-5">
+                <img src="https://osegredo.com.br/wp-content/uploads/2019/07/Essa-%C3%A9-a-pessoa-que-voc%C3%AA-N%C3%83O-deve-ser.jpg" class="card-imagem-clientes rounded" alt="...">
+                <div class="media-body ml-5">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li class="media mt-5">
+                <img src="https://www.jrmcoaching.com.br/wp-content/uploads/2019/03/pessoas-sutis.jpg" class="card-imagem-clientes rounded" alt="...">
+                <div class="media-body ml-5">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Região dos planos de aluguéis -->
+    <div class="container mt-5">
+        <h2>Planos de Aluguéis:</h2>
+        <div class="row">
+        	<div class="col-sm-12 col-lg-4 mt-5 mb-5">
+           		<ul class="list-group">
+                    <h3 class="text-center">Prata</h3>
+	  				<li class="list-group-item">1x</li>
+	  				<li class="list-group-item">2x</li>
+	  				<li class="list-group-item">3x</li>
+				</ul>
+				<button type="button" class="btn btn-dark col-6 offset-3 d-flex justify-content-center">Assinar</button>
+	        </div>
+	        <div class="col-sm-12 col-lg-4 mt-5 mb-5">
+           		<ul class="list-group">
+                    <h3 class="text-center">Ouro</h3>
+	  				<li class="list-group-item">1x</li>
+	  				<li class="list-group-item">2x</li>
+	  				<li class="list-group-item">3x</li>
+				</ul>
+				<button type="button" class="btn btn-dark col-6 offset-3 d-flex justify-content-center">Assinar</button>
+	        </div>
+	        <div class="col-sm-12 col-lg-4 mt-5 mb-5">
+           		<ul class="list-group">
+                    <h3 class="text-center">Diamante</h3>
+	  				<li class="list-group-item">1x</li>
+	  				<li class="list-group-item">2x</li>
+	  				<li class="list-group-item">3x</li>
+				</ul>
+                <button type="button" class="btn btn-dark col-6 offset-3 d-flex justify-content-center">Assinar</button>
+	        </div>
+	    </div>
+	</div>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

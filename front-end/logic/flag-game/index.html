@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <img id="bandeira" src="http://flags.fmcdn.net/data/flags/w580/br.png">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-6">
+          <input id="nome" placeholder="Nome:" style="width: 450px;">
+        </div>
+        <div class="col-1">
+          <button onclick="enviar()" name="Enviar">Enviar</button>
+        </div>
+        <div class="col-1">
+          <button onclick="pular()" name="Pular">Pular</button>
+        </div>
+      </div>
+      <h6 id="acertos">Acertos: 0</h6>
+      <h6 id="tentativas">Tentativas: 0</h6>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
