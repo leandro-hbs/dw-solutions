@@ -1,0 +1,62 @@
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 2.1rem;
+    font-weight: bold;
+    background-color: tomato;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+
+main {
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-bottom: 80px;
+    margin-right: 0px;
+}
+
+main h1 {
+    color: black;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+main h2 {
+    font-size: 27px;
+    color: gray;
+    margin-top: 0px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 320px;
+}
+
+p {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: tomato;
+}
+
+a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
