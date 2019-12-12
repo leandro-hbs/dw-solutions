@@ -2,7 +2,7 @@
 
 require "util.php";
 
-$host = $_GET["host"] ?? null;
+$host = $_GET["host"] ?? 'null';
 $count = $_GET["count"] ?? 1;
 
 $pingInfo = ping($host, $count);
