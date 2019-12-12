@@ -1,7 +1,6 @@
 <?php
 function interfaces_encode($result)
 {
-    
     $processes = [];
     $regex = "/(\d*): (\S+):.*mtu (\d+).*state (\S+).*\s+link\/(\S+) (\S+) brd (\S+).*\s+/";
     preg_match_all($regex, $result, $matches);
